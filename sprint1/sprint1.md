@@ -2,25 +2,57 @@
 
 ## Tâches à réaliser 
 
-- Tâches 1, 2 , 3
-    - Création du repo Github
-    - Création du projet Symfony
-    - Création des utilisateurs
+Découpage de la tâche 5, 6 et 7
 
-Création du Repository sur Github
+Ces tâches sont : 
 
- Création du projet Symfony avec Symfony Flex
+    Tâches 5 : Création du module de facturation
 
-- Création de l'entité UserEntity
-- Création du controller UserController
-- Création de l'authentificator
-- Mise en place du CRUD pour l'administrateur
-- Mise en place des droits(CRUD, changer les droits d'un utilisateur)
-    - Les visiteurs
-    - Les acheteurs
-    - Les vendeurs
-    - Les conseillers
-    - Les administrateurs
-- Lors de la création du compte, le mot de passe n'est pas choisi par l'utilisateur mais généré automatiquement et envoyé par mail
-- Mise en place d'un service de changement de mot de passe
-- Mise en place d'un service de mot de passe oublié
+    Tâches 6 : Création de suivi 
+
+    Tâches 7 : Système de messagerie
+
+
+---------------------------------------------------
+
+Tâches 5 : Création du module de facturation
+
+- Création de l'entité FactureEntity
+- Création du controller FactureController
+- Lié l'entité Facture à l'entité Annonce
+- Lié l'entité facture à l'entité Utilisateur
+- Création du générateur de PDF
+- Création des méthodes renderPdf(), GeneratePdf(), SavePdf(), DownloadPdf(), 
+
+Complexité : 75
+
+---------------------------------------------------
+
+Tâches 6 : Création de suivi 
+
+- Création d'une liste avec tout les projets liés à un vendeur/conseiller
+    - Création du controller suivi
+    - Création de l'entité suivi
+    - Ajout des différentes étapes à suivre dans la table Suivi
+    - Conditions sur les documents requis pour terminer chaque étapes
+    - Etapes de validation des documents
+
+- Mise en place d'un suivi avec une barre de chargement pour expliquer à l'utilisateur le déroulement de la vente
+    - Récupération de l'étape 
+    - Création de la barre d'évolution de la vente
+
+
+Complexité : 50
+
+-----------------------------------------------------
+
+Tâches 7 : Système de messagerie
+- Mise en place de pages de contacts sur chaque annonces/suivi pour contacter le conseiller/vendeur qui gère l'annonce
+    - Création du controller MessageController
+    - Création de l'entité MessageEntity
+    - Ajout de méthodes pour gérer l'envoi des messages
+    - Mise à jour des vues
+    - Ajout d'une icon de notification pour afficher les nouveaux messages
+
+Complexité : 50
+
